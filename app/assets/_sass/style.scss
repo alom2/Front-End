@@ -4,17 +4,33 @@
 */
 $fColor:#64849c;
 $wide:100%;
-
+/*Gerais*/
 body{
     margin:0;
+	font-family:'arial';
+	color:$fColor;
+	background-color:#ecf0f5;
 }
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+/*Fim Gerais*/
+
 .top{
     width: $wide;
+	background-color:#fff;
     img{
-        padding: 10px;
+        padding: 20px;
     }
     .titulo{
         font-size:22px;
+		padding: 22px;
     }
 }
 

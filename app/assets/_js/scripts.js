@@ -1,3 +1,3 @@
-window.load = function(){
-     alert("Olá"); 
+document.load = function(){
+     alert("Ola"); 
 };

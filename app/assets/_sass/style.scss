@@ -4,17 +4,32 @@
 */
 $fColor:#64849c;
 $wide:100%;
-
+/*Fim Gerais*/
 body{
     margin:0;
+	background-color:#ecf1f7;
+	font-family:'Arial';
 }
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+/*Fim Gerais*/
 .top{
     width: $wide;
+	color: $fColor;
+	background-color:#fff;
     img{
-        padding: 10px;
+        padding: 20px;
     }
     .titulo{
         font-size:22px;
+		padding: 22px 0;
     }
 }
 

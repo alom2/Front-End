@@ -1,0 +1,20 @@
+/* 
+    Created on : 14/07/2016, 22:40:41
+    Author     : André
+*/
+$fColor:#64849c;
+$wide:100%;
+
+body{
+    margin:0;
+}
+.top{
+    width: $wide;
+    img{
+        padding: 10px;
+    }
+    .titulo{
+        font-size:22px;
+    }
+}
+

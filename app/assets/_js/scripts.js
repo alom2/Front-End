@@ -3,6 +3,7 @@ var dataset = new Array();//informções que serão passadas para a tabala
 
 $(document).ready(function () {
     var tRepositorios = criaTable(dataset);//inicialização da tabela
+    document.getElementById("envio").disabled = true;
 });
 
 app.controller('pesquisa', function ($scope, $http) {
@@ -63,7 +64,11 @@ function criaTable(dataset) {
 }
 function valida(){
     var nome = document.getElementById("nome").value.toString();
+    if(nome !== null){
+    document.getElementById("envio").disabled = false;   
+    };
     document.getElementById("nome").value = nome.replace(/\s+/g ,"");
+    
     
 }
 

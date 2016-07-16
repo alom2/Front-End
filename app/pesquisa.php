@@ -1,21 +1,18 @@
 <?php
-    require '../vendor/autoload.php';
-	
-    include 'sessao.php';
-	
-	$postdata = file_get_contents("php://input");
-        $request = $postdata;
-        $usuario = $request->nome;
-        
-	$client = new \Github\Client();
-	$repos = $client->api('user')->repositories($usuario);
-        echo json_encode($repos);
 
-//        foreach($repos as $repo){
-//            
-//		if($repo['description'] === NULL){
-//			$repo['description'] = "--";
-//		}
-//		echo $repo['id'].', '.$repo['owner']['login'].', '.$repo['name'].', '.$repo['description'].'<br>';
-//   }
-	
+require '../vendor/autoload.php';
+
+
+$postdata = file_get_contents("php://input");
+$request = json_decode($postdata);
+$usuario = $request->nome;
+
+if ($usuario == NULL) {
+    echo "Nenhum usuario digitado";
+} else {
+
+    $client = new \Github\Client();
+    $repos = $client->api('user')->repositories($usuario);
+    echo json_encode($repos);
+ 
+}

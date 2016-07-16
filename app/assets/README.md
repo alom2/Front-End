@@ -1,6 +1,8 @@
-# Front-End
-Teste Front-End
+# Teste para Front-End
 
-Aplicação desenvolvida para o teste de Front-End
+Desenvolvedor: André Moreira
 
-link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app
+## Pasta que contém os estilos e scripts da Aplicação
+
+
+link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app (Os direitos autorais da logo usada pertencem a Mongeral Aegon)

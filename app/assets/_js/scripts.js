@@ -21,10 +21,9 @@ app.controller('pesquisa', function ($scope, $http) {
             angular.forEach(table, function (value, key) {
                 dataset[key] = new Array(table[key].id, table[key].name, table[key].html_url);
             });//preechimento da matriz
-            if (Array.isArray(dataset)){
-               $scope.usuario = $scope.nome;                
-                tRepositorios = criaTable(dataset);/*cria uma nova tabela com os resultados( data table nao tem um suporte bom para ajax entao essa e a melhor solucao)*/
-            }
+            $scope.usuario = $scope.nome;
+            tRepositorios = criaTable(dataset);/*cria uma nova tabela com os resultados( data table nao tem um suporte bom para ajax entao essa e a melhor solucao)*/
+
             showResults();//exibe a tabela(somente na primeira vez)           
             document.getElementById('loading').style.display = "none";
         }, function errorCallback() {
@@ -62,13 +61,13 @@ function criaTable(dataset) {
     });
     return tRepositorios;
 }
-function valida(){
+function valida() {
     var nome = document.getElementById("nome").value.toString();
-    if(nome !== null){
-    document.getElementById("envio").disabled = false;   
-    };
-    document.getElementById("nome").value = nome.replace(/\s+/g ,"");
-    
-    
+    if (nome !== null) {
+        document.getElementById("envio").disabled = false;
+    }
+    document.getElementById("nome").value = nome.replace(/\s+/g, "");
+
+
 }
 

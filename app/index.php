@@ -29,7 +29,7 @@
                 <div class="inner">
 
                     <form method="post" ng-submit="search()">
-                        <label for="nome">Digite o nome do usuario ou o email:</label>
+                        <label for="nome">Digite o nome do usuario:</label>
                         <div class="search"><input type="text" ng-model="nome" id="nome" onkeyup="valida()"><img id="loading" src="assets/imgs/loadingGif.gif"></img></div>
                         <button id="envio" type="submit">Enviar</button>
                     </form>

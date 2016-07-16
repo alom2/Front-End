@@ -15,12 +15,12 @@ app.controller('pesquisa', function ($scope, $http) {
             data: {nome: $scope.nome},
             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).then(function successCallback(response) {
-            var table = response.data;        
+            var table = response.data;
+            tRepositorios.destroy();//destroi a tabela exitente
             dataset.length = 0;//reseta a matriz para cada busca
             angular.forEach(table, function (value, key) {
                 dataset[key] = new Array(table[key].id, table[key].name, table[key].html_url);
             });//preechimento da matriz
-            tRepositorios.destroy();//destroi a tabela exitente
             if (Array.isArray(dataset)){
                $scope.usuario = $scope.nome;                
                 tRepositorios = criaTable(dataset);/*cria uma nova tabela com os resultados( data table nao tem um suporte bom para ajax entao essa e a melhor solucao)*/

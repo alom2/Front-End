@@ -6,7 +6,6 @@ Desenvolvedor: André Moreira
 * index.php(Página Inicial);
 * pesquisa.php(Onde é executada a busco dos repositorios atravéz do metodo POST);
 * assets(Pasta onde ficam os estilos e scripts da Aplicação).
-* sessao.php(arquivo usado somente inicio do projeto);
 * layout.psd(primeira ideia para a Aplicação).
 
 

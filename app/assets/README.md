@@ -1,6 +1,7 @@
 # Front-End
-Teste Front-End
+Teste para Front-End
 
-Aplicação desenvolvida para o teste de Front-End
 
-link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app
+
+
+link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app (Os direitos autorais da logo usada pertencem a Mongeral Aegon)

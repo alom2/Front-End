@@ -1,6 +1,11 @@
-# Front-End
-Teste Front-End
+# Teste para Front-End
 
-Aplicação desenvolvida para o teste de Front-End
+Desenvolvedor: André Moreira
+
+## Pasta Principal da Aplicação
+* index.php(Página Inicial);
+* pesquisa.php(Onde é executada a busco dos repositorios atravéz do metodo POST);
+* assets(Pasta onde ficam os estilos e scripts da Aplicação).
+
 
 link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app

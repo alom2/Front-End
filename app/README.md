@@ -9,4 +9,4 @@ Desenvolvedor: André Moreira
 * sessao.php(arquivo usado somente inicio do projeto);
 
 
-link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app
+link para a app: http://divulgacaoandre.esy.es/mongeralAegon/app (Os direitos autorais da logo usada pertencem a Mongeral Aegon)
